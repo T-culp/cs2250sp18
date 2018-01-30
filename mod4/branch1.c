@@ -63,11 +63,7 @@ int main()
    {
     printf("You are at the special age %d.\n", age);
    }
-  //else
-  {
-  //    temp = abs(35 - age);
-  //printf("You are %d years from 35", temp);
-  }
+  
    printf("Adios amigo.\n");
            return 0;
 }
