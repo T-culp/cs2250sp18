@@ -3,7 +3,7 @@
  *
  *       Filename:  multibranch.c
  *
- *    Description: Nested ranches 
+ *    Description: Nested branches 
  *
  *        Version:  1.0
  *        Created:  01/30/2018 10:10:24 AM
