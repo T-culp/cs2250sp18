@@ -127,7 +127,7 @@ int main()
   if (strcmp(sService1, "-") == 0)
     {
        
-        printf("Service 1: %s, $0\n", sService1);
+        printf("Service 2: %s, $0\n", sService1);
         costOne = 0;
     }//End if
 
@@ -136,7 +136,7 @@ int main()
             scanf("%s", sService2);
             if (strcmp(sService2, "change") == 0)
             {
-            printf("Service 1: %s %s, $35\n", sService1, sService2);
+            printf("Service 2: %s %s, $35\n", sService1, sService2);
             costTwo = 35;
             }
             else
@@ -152,7 +152,7 @@ int main()
             scanf("%s", sService2);
             if (strcmp(sService2, "rotation") == 0)
             {
-            printf("Service 1: %s %s, $19\n", sService1, sService2);
+            printf("Service 2: %s %s, $19\n", sService1, sService2);
             costTwo = 19;
             }
             else
@@ -168,7 +168,7 @@ int main()
             scanf("%s", sService2);
             if (strcmp(sService2, "wash") == 0)
             {
-            printf("Service 1: %s %s, $7\n", sService1, sService2);
+            printf("Service 2: %s %s, $7\n", sService1, sService2);
             costTwo = 7;
             }
             else
@@ -183,7 +183,7 @@ int main()
             scanf("%s", sService2);
             if (strcmp(sService2, "wax") == 0)
             {
-            printf("Service 1: %s %s, $12\n", sService1, sService2);
+            printf("Service 2: %s %s, $12\n", sService1, sService2);
             costTwo = 12;
             }
             else
