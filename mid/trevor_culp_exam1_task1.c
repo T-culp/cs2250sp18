@@ -55,7 +55,7 @@ void MoneyOptions(float moneyEarned)
     {
         printf("With this amount of money %.2f you can buy a car\n", moneyEarned);
     }//End else if
-    
+
     else if(moneyEarned > 50000)
     {
         printf("With this amount of money %.2f you can buy a small house\n", moneyEarned);
