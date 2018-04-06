@@ -29,6 +29,9 @@
  */
 ShoppingCart AddItem(ItemToPurchase item, ShoppingCart cart)
 {
+    for(int i = 0; i < 10; i++)
+    {
+    }//End for
     return cart;
 }//End AddItee
 
@@ -52,6 +55,17 @@ ShoppingCart RemoveItem(char name[], ShoppingCart cart)
 
 /* 
  * ===  FUNCTION  ======================================================================
+ *         Name:  ModifyItem
+ *  Description:  Modifys an exisitng item in the cart
+ * =====================================================================================
+ */
+ShoppingCart ModifyItem(ItemToPurchace item, SHoppingCart cart)
+{
+    return cart;
+}//End ModifyItem
+
+/* 
+ * ===  FUNCTION  ======================================================================
  *         Name:  GetNumItemsInCart
  *  Description:  Get the total number of items from cart
  * =====================================================================================
@@ -62,6 +76,17 @@ int GetNumItemsInCart(ShoppingCart cart)
 
     return totalItems;
 }//End GetNumItemsInCart
+
+
+/* 
+ * ===  FUNCTION  ======================================================================
+ *         Name:  GetCostOfCart
+ *  Description:  Determines and returns the total cost of items in the cart
+ * =====================================================================================
+ */
+void GetCostOfCart()ShoppingCart cart
+{
+}//End GetCostOfCart
 
 /* 
  * ===  FUNCTION  ======================================================================
@@ -84,4 +109,17 @@ void PrintDescriptions(ShoppingCart cart)
 {
     return;
 }//End PrintDescriptions
+
+
+/* 
+ * ===  FUNCTION  ======================================================================
+ *         Name:  PrintMenu
+ *  Description:  Displays menu to user
+ * =====================================================================================
+ */
+void PrintMenu(ShoppingCart cart)
+{
+    
+    return;
+}//End PrintMenu
 

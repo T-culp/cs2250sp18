@@ -23,7 +23,8 @@ typedef struct ItemToPurchase
     char itemName[50];
     char itemDescription[50];
     int itemPrice;
-    int itemQuantity;
+    int itemQuantity;i
+    char itemDescription[50];
 }ItemToPurchase;
 
 //Constants

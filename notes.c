@@ -56,3 +56,22 @@
     //shopping.c #include shopping.h
     //main.c #include shopping.h
     //print function in main
+    
+    //for auto indent, ma for mark -> at end type =`a
+    //alternative method: @ first line type =G
+    
+    //to change a printf statement: ci"
+    
+    //mod10 prog assignment
+    /*
+     * case s currnode
+     * return NextNodePtr
+     *
+     * case t example in txtbk
+     *
+     * case r loop to find one you want
+     *
+     * case c
+     *
+     * try visual studio for debugging
+     * */
