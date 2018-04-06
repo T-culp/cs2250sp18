@@ -92,11 +92,27 @@ void PrintMenu(char playlistTitle[])
 
                 // Create a new node for playlist
                 // .....
-
-
                 // If song is first in playlist, update head/tail
+                if(headnode == NULL)
+                {
+                    headNode = (PlaylistNode*)malloc(sizeof(PlaylistNode));
+                    CreatePlaylistNode(headNode, uniqueID, songName,
+                            artistName, songLength, NULL);
+                    tailNode = headNode;
+                }//End if
+
+
                 // Otherwise insert to end of playlist and update tail
                 // .....
+                else
+                {
+                    currNode = (PlaylistNode*)malloc(sizeof(PlaylistNode));
+                    CreatePlaylistNode(currNode, uniqueID, songName,
+                            artistName, songLength, NULL);
+                    InsertPlaylistNodeAfter(tailNode, currNode);
+                    tailNode = currNode;
+                }//End else
+
                 break;
 
 
