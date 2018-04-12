@@ -17,40 +17,29 @@
  */
 //#include <stdio.h> //For C
 #include <iostream>  //For C++
+#include "PersonClass.h"
 using namespace std; //For C++
 
-// Constants
-class Person
+//Default Constructor
+ Person::Person()
 {
-    private:
-            int age;
-            string name;
-            double weight;
+    //Init all or most of variables or attributes
+    age = 0;
+    name = "None";
+    weight = 0.0;
+    
 
-    public:
-            void SetAge(int a);
-            int GetAge();
-            void SetName(string n);
-            string GetName();
-            void SetWeight(double w);
-            double GetWeight();
-};
-// Function Prototypes
+}//End Person
 
-// Main Function
-int main()
+//Second Constructor(Value Constructor)
+Person::Person(int a, string n,double w)
 {
-    Person p1;
-    p1.SetAge(21);
-    p1.SetName("Waldo");
-    p1.SetWeight(185.2);
+    age = a;
+    name = n;
+    weight = w;
+    return;
+}//End Person
 
-    cout << "Name " << p1.GetName() << endl;
-    cout << "Age " << p1.GetAge() << endl;
-    cout << "Weight " << p1.GetWeight() << endl;
-
-    return 0;
-}
 // Function Definitions
 
 void Person::SetAge(int a)
@@ -86,4 +75,23 @@ double Person::GetWeight()
     return weight;
 }//End GetWeight
 
+void Person::ShowInfo() const
+{
+    //The "this" pointer refers to the object itself
+    cout << "Name " << this->name << endl;
+    cout << "Age " << this->age << endl;
+    cout << "Weight " << this->weight << endl;
+    return;
+}//End ShowInfo
 
+Person Person::operator+(Person rhs)
+{
+    Person tmp;
+    //Add elements of objects
+    //       first  second
+    tmp.age = age + rhs.age;
+    tmp.name = name + " " + rhs.name;
+    tmp.weight = weight + rhs.weight;
+    
+    return tmp;
+}//End operator+ overload
